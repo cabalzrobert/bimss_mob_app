@@ -249,15 +249,15 @@ export class ViewHolder extends React.Component {
                             Logout
                         </IonButton>
                     </div>
-                    <div style={styles('height:auto;position:relative;padding:10px 0px;position:')} >
-                        <div style={styles('position: absolute;top:0px;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.25);border-radius:10px;border:1px solid rgba(255, 255, 255, 0.25)')} ></div>
-                        <div className="horizontal" style={styles('font-size:15px;color:white;position:relative')}> {/*<!--color:#f49e2b-->*/}
-                            <div className="vertical">
+                    {/* <div style={styles('height:auto;position:relative;padding:10px 0px;position:')} > */}
+                        {/* <div style={styles('position: absolute;top:0px;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.25);border-radius:10px;border:1px solid rgba(255, 255, 255, 0.25)')} ></div> */}
+                        {/* <div className="horizontal" style={styles('font-size:15px;color:white;position:relative')}> <!--color:#f49e2b--> */}
+                            {/* <div className="vertical"> */}
                                 {/* <div className="horizontal">Last Login:&nbsp;<b>{u.LastLogIn}</b></div> */}
-                                <div className="horizontal">App Version:&nbsp;<b>{prop.AppVersion}</b></div>
-                            </div>
-                        </div>
-                    </div>
+                                {/* <div className="horizontal">App Version:&nbsp;<b>{prop.AppVersion}</b></div> */}
+                            {/* </div> */}
+                        {/* </div> */}
+                    {/* </div> */}
                 </Layout>
                 <Layout auto>
                     <IonContent scrollY>

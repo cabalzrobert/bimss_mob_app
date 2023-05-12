@@ -607,9 +607,9 @@ export class ViewHolder extends React.Component {
         const res = await modal.onDidDismiss();
         const data = (res || mtObj).data;
         if (!data) return;
-        if (input.Religion == data.CODE) return;
-        input.Religion = data.CODE;
-        input.ReligionName = data.DESCRIPTION;
+        if (input.Religion == data.Religion) return;
+        input.Religion = data.Religion;
+        input.ReligionName = data.ReligionName;
         this.setState({ input: this.input });
         console.log(input.Religion);
     }
@@ -2442,8 +2442,8 @@ class ReligionSelectPopUp extends React.Component<{ modal: Function, Title: stri
         this.subs.s1 = rest.post('religion', Object.rcopy(filter, this.filter)).subscribe(async (res: any) => {
             this.prop.IsFiltering = false;
             if (res.Status != 'error') {
-                if (filter.IsReset) this.list = res.sitio.map((o: any) => this.listDetails(o));
-                else res.sitio.forEach((o: any) => this.list.push(this.listDetails(o)));
+                if (filter.IsReset) this.list = res.Religion.map((o: any) => this.listDetails(o));
+                else res.Religion.forEach((o: any) => this.list.push(this.listDetails(o)));
                 //SitioSelectPopUp.cache[this.filter.CacheID] = { Filter: this.filter, List: this.list, };
                 this.prop.IsEmpty = (this.list.length < 1);
                 if (callback != null) callback();
@@ -2494,7 +2494,7 @@ class ReligionSelectPopUp extends React.Component<{ modal: Function, Title: stri
                                                     style={styles('padding:5px;', { 'border-top': (idx == 0 ? null : '1px solid rgba(128,128,128,0.75)') },)}>
                                                     <IonRippleEffect />
                                                     <div className="col-12 p-0 vertical">
-                                                        <div>{item.DESCRIPTION}</div>
+                                                        <div>{item.ReligionName}</div>
                                                     </div>
                                                 </div>
                                             </> : <MoreItem item={item} onClick={() => this.hLoadMore(item)} />}
