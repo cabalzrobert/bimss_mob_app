@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script>
+(function(){
+    var params = new URLSearchParams(location.search);
+    var html = '';
+    if(params.has('data:text/html;charset=UTF-8')) html = params.get('data:text/html;charset=UTF-8');
+    else if(params.has('data:text/html;charset=UTF-8;base64')) html = atob(params.get('data:text/html;charset=UTF-8;base64'));
+    else if(params.has('data:text/html;base64')) html = atob(params.get('data:text/html;base64'));
+    document.querySelector('html').innerHTML = html;
+})();
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <access origin="*" />
+  
+  <feature name="CallNumber">
+    <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber"/>
+  </feature>
+
+  <feature name="Base64">
+    <param name="android-package" value="com.badrit.Base64.Base64Plugin"/>
+  </feature>
+
+  <feature name="CordovaHttpPlugin">
+    <param name="android-package" value="com.silkimen.cordovahttp.CordovaHttpPlugin"/>
+  </feature>
+
+  <feature name="Permissions">
+    <param name="android-package" value="com.android.plugins.Permissions"/>
+  </feature>
+
+  <feature name="AppMinimize">
+    <param name="android-package" value="tomloprod.AppMinimize"/>
+  </feature>
+
+  <feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+  </feature>
+
+  <feature name="CropPlugin">
+    <param name="android-package" value="com.jeduan.crop.CropPlugin"/>
+  </feature>
+
+  <feature name="SitewaertsDocumentViewer">
+    <param name="android-package" value="de.sitewaerts.cordova.documentviewer.DocumentViewerPlugin"/>
+  </feature>
+
+  <feature name="File">
+    <param name="android-package" value="org.apache.cordova.file.FileUtils"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="FileOpener2">
+    <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2"/>
+  </feature>
+
+  <feature name="FileTransfer">
+    <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer"/>
+  </feature>
+
+  <feature name="NativeStorage">
+    <param name="android-package" value="NativeStorage"/>
+  </feature>
+
+  <feature name="Sim">
+    <param name="android-package" value="com.pbakondy.Sim"/>
+  </feature>
+
+  <feature name="SMSReceive">
+    <param name="android-package" value="com.andreszs.cordova.sms.SMSReceive"/>
+  </feature>
+
+  <feature name="ImagePicker">
+    <param name="android-package" value="com.synconset.ImagePicker"/>
+  </feature>
+
+  <feature name="Toast">
+    <param name="android-package" value="nl.xservices.plugins.Toast"/>
+  </feature>
+
+  <feature name="Sms">
+    <param name="android-package" value="com.cordova.plugins.sms.Sms"/>
+  </feature>
+
+  
+</widget>

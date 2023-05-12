@@ -1,0 +1,28 @@
+{
+  "_id": "cordova-plugin-thermal-printer@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-thermal-printer",
+  "_phantomChildren": {},
+  "author": {
+    "name": "thermalprinter"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-thermal-printer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Thermal Printer",
+  "engines": {
+    "cordovaDependencies": {
+      "7.1.0": {
+        "cordova-android": ">=7.1.0"
+      }
+    }
+  },
+  "name": "cordova-plugin-thermal-printer",
+  "version": "1.0.0"
+}

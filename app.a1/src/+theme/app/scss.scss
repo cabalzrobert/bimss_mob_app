@@ -1,0 +1,36 @@
+@import "./app_bg";
+@import "./app_bg1";
+@import "./app_bg2";
+@import "./app_bg3";
+@import "./img_logo_abacos";
+@import "./img_logo_rebos";
+@import "./img_pcso_products";
+@import "./img_pcso";
+@import "./img_stl_logo";
+
+@import "./main/bottom-panel/scss";
+@import "./main/keyboard-panel/scss";
+@import "./main/top-panel/scss.scss";
+@import "./main/widget/scss";
+
+@mixin main-scss
+{
+
+    @include app-bg;
+    @include app-bg1;
+    @include app-bg2;
+    @include app-bg3;
+    @include stl_logo-img;
+    @include logo_abacos-img; 
+    @include logo_rebos-img;
+    @include pcso-img; 
+    @include pcso_products-img;
+
+    //
+    @include widget-scss;
+    //
+    @include main_btm-panel;
+    @include keyboard-panel;
+    @include main_top-panel;
+}
+

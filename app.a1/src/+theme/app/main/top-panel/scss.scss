@@ -1,0 +1,11 @@
+@import "./bg-top_home_panel.scss";
+@import "./btn-top_sm_msg";
+@import "./btn-top_sm_menu";
+
+@mixin main_top-panel
+{
+    @include btn-top_sm_msg; 
+    @include btn-top_sm_menu; 
+}
+
+ 

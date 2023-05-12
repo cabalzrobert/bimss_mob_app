@@ -1,0 +1,47 @@
+/*
+//black
+$bg-red_panel:('data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%20593%2066.1%22%20style%3D%22enable-background%3Anew%200%200%20593%2066.1%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3Aurl(%23SVGID_1_)%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%0A%09%09%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22296.8%22%20y1%3D%221.2469%22%20x2%3D%22296.8%22%20y2%3D%2270.0571%22%20gradientTransform%3D%22matrix(1%200%200%20-1%200%2068)%22%3E%0A%09%09%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23000000%22%2F%3E%0A%09%09%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23D4D4D4%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Crect%20x%3D%22-4.2%22%20class%3D%22st0%22%20width%3D%22602%22%20height%3D%2266.1%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E');
+
+*/
+$bg-red_panel:('data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.3.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%20593%2066.1%22%20enable-background%3D%22new%200%200%20593%2066.1%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%3E%0A%09%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22296.8378%22%20y1%3D%2266.7531%22%20x2%3D%22296.8378%22%20y2%3D%22-2.0571%22%3E%0A%09%09%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23F00001%22%2F%3E%0A%09%09%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23F9183F%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Crect%20x%3D%22-4.2%22%20fill%3D%22url(%23SVGID_1_)%22%20width%3D%22602%22%20height%3D%2266.1%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E');
+
+@mixin bg-red_panel
+{
+    background: url($bg-red_panel);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+@mixin input-container
+{
+    .input_container{
+        height: 35px;
+        overflow: hidden;
+        background-color: #511111;
+        color:#fefed1;
+        box-shadow: 0px 1px #eb6366;
+        border-radius: 5px;
+    }
+}
+
+@mixin bg-top_red_panel
+{
+    .bg-top_red_panel{
+        @include bg-red_panel;
+        @include input-container;
+        width: 100%;
+        height: 50px;
+        margin-top:-0.5px;
+    }
+}
+
+@mixin bg-btm_red_panel
+{
+    .bg-btm_red_panel{
+        @include bg-red_panel;
+        @include input-container;
+        width: 100%;
+        height: 45px;
+        position: absolute;
+        bottom: 0px;
+    }
+}

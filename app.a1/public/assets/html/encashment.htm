@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+ <STYLE type="text/css">
+body{
+			font-family: Helvetica, Verdana;
+			font-size: 13px;
+			/*color: #4d4c4c;*/
+			color: #fefed1;
+		}
+ table  {}
+ th{border: none; padding: 10px 5px;}
+ td{border: none; padding: 3px 5px;}
+
+ 
+.statConfirm{
+	border: 1px solid #FFF;
+	background-color: #399d03;
+	color: #FFF;
+	padding: 8px 10px;
+	font-weight: bold;
+	border: 0px solid #000;
+	border-radius: 5px;
+
+}
+.statCancelled{
+	border: 1px solid #FFF;
+	background-color: #d2232a;
+	color: #FFF;
+	padding: 8px 10px;
+	font-weight: bold;
+	border: 0px solid #000;
+	border-radius: 5px;
+
+}
+.statPending{
+	border: 1px solid #FFF;
+	background-color: #ff9600;
+	color: #FFF;
+	padding: 8px 10px;
+	font-weight: bold;
+	border: 0px solid #000;
+	border-radius: 5px;
+
+}
+</STYLE>
+
+ </head> 
+ <body> 
+ 	<div>
+ 		<table cellspacing='0' cellpadding='0'>
+ 		<tr><td align="right">Status</td><td><input class="[classstatus]" type="button" value="[status]"></td></tr>
+	    <tr><td align="right" width="100">Transaction No.</td><td style="font-size:20px">[code]</td> </tr>
+		<tr><td align="right">Amount</td><td><b>[amount]</b></td> </tr>
+		<tr><td align="right">Encash Type</td><td><b>[encashtype]</b></td></tr>
+		<tr><td align="right">[txtcompany]</td><td><b>[companyname]</b></td></tr>
+		<tr><td align="right">[txtaccountno]</td><td><b>[accountno]</b></td></tr>
+		<tr><td align="right">[txtaccountname]</td><td><b>[accountname]</b></td></tr>
+		[address]
+		<tr><td align="right">Date Request</td><td><b>[date]</b></td></tr>
+		[details]
+	</table>
+ 	</div>
+</body>
+</html>

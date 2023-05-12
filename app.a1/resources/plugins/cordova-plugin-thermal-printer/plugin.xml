@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+  xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-thermal-printer" version="1.0.0">
+  <name>Thermal Printer</name>
+  <engines>
+    <engine name="cordova" version=">=7.1.0"/>
+    <engine name="cordova-android" version=">=7.1.0"/>
+  </engines>
+  <js-module src="www/innerprinter.js" name="ThermalPrinter">
+    <clobbers target="thermalPrinter" /> <!-- window.thermalPrinter -->
+  </js-module>
+  <platform name="android">
+    <preference name="ANDROID_SUPPORT_V13_VERSION" default="27.+"/>
+    <!--<framework src="com.sunmi:sunmiui:latest.release"/>-->
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ThermalPrinter">  <!-- exec(resolve, reject, "ThermalPrinter", "actionName", [data..]); -->
+        <param name="android-package" value="com.thermal.innerprinter.ThermalPrinter"/> <!-- targer load from java -->
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <!--<receiver android:name="com.sunmi.innerprinter.PrinterStatusReceiver" android:enabled="true">
+        <intent-filter android:priority="1000">
+          <action android:name="woyou.aidlservice.jiuv5.OUT_OF_PAPER_ACTION" />
+          <action android:name="woyou.aidlservice.jiuv5.ERROR_ACTION" />
+          <action android:name="woyou.aidlservice.jiuv5.NORMAL_ACTION" />
+          <action android:name="woyou.aidlservice.jiuv5.COVER_OPEN_ACTION" />
+          <action android:name="woyou.aidlservice.jiuv5.COVER_ERROR_ACTION" />
+          <action android:name="woyou.aidlservice.jiuv5.KNIFE_ERROR_ACTION_1" />
+          <action android:name="woyou.aidlservice.jiuv5.KNIFE_ERROR_ACTION_2" />
+          <action android:name="woyou.aidlservice.jiuv5.OVER_HEATING_ACITON" />
+          <action android:name="woyou.aidlservice.jiuv5.FIRMWARE_UPDATING_ACITON" />
+        </intent-filter>
+      </receiver>
+      <service android:name="woyou.aidlservice.jiuiv5.IWoyouService">
+        <intent-filter>
+          <action android:name="woyou.aidlservice.jiuiv5.IWoyouService" />
+        </intent-filter>
+      </service>-->
+      
+      <service android:name="com.iposprinter.iposprinterservice.IPosPrintService"/>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    </config-file>
+    <!--
+    <source-file src="src/android/com/iposprinter/iposprinterservice/IPosPrinterCallback.aidl" target-dir="src/com/iposprinter/iposprinterservice/"/>
+    <source-file src="src/android/com/iposprinter/iposprinterservice/IPosPrinterService.aidl" target-dir="src/com/iposprinter/iposprinterservice/"/>
+    -->
+    <source-file src="src/android/com/iposprinter/iposprinterservice/IPosPrinterCallback.java" target-dir="src/com/iposprinter/iposprinterservice/"/>
+    <source-file src="src/android/com/iposprinter/iposprinterservice/IPosPrinterService.java" target-dir="src/com/iposprinter/iposprinterservice/"/>
+    <source-file src="src/android/com/thermal/innerprinter/ThermalPrinter.java" target-dir="src/com/thermal/innerprinter/"/>
+    <source-file src="src/android/com/thermal/innerprinter/MemInfo.java" target-dir="src/com/thermal/innerprinter/"/>
+    <source-file src="src/android/com/thermal/innerprinter/ThreadPoolManager.java" target-dir="src/com/thermal/innerprinter/"/>
+    <source-file src="src/android/com/thermal/utils/BitmapUtils.java" target-dir="src/com/thermal/utils/"/>
+    <source-file src="src/android/com/thermal/utils/ButtonDelayUtils.java" target-dir="src/com/thermal/utils/"/>
+    <source-file src="src/android/com/thermal/utils/BytesUtil.java" target-dir="src/com/thermal/utils/"/>
+    <source-file src="src/android/com/thermal/utils/HandlerUtils.java" target-dir="src/com/thermal/utils/"/>
+  </platform>
+</plugin>

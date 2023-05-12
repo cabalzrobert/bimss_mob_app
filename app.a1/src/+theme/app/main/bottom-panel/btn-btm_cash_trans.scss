@@ -1,0 +1,16 @@
+$btn-btm_cash_trans:('data:image/svg+xml;charset=UTF-8,');
+
+$btn-btm_cash_trans_tap:('data:image/svg+xml;charset=UTF-8,');
+
+@mixin btn-btm_cash_trans
+{
+    .btn-btm_cash_trans{
+        background: url($btn-btm_cash_trans) no-repeat center;  
+        background-position-y: bottom;
+        width: 100%;
+        &:active{
+            background: url($btn-btm_cash_trans_tap) no-repeat center;  
+            background-position-y: bottom;
+        }
+    }
+}

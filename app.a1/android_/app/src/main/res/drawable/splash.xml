@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#FFFFFF" />
+    </item>
+    <item
+        android:top="-24dp"
+        android:width="225dp"
+        android:height="225dp"
+        android:gravity="center">
+        <bitmap
+            android:src="@drawable/applogo2"
+            android:tileMode="disabled"
+            android:gravity="fill" />
+    </item>
+</layer-list>

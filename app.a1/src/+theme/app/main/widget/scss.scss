@@ -1,0 +1,56 @@
+@import "./bet_panel";
+@import "./bg-cut_lines";
+@import "./bg-red_panel";
+@import "./bg-top_toolbar_panel";
+@import "./btn-arrow_left";
+@import "./btn-arrow_right";
+@import "./btn-au_confirm";
+@import "./btn-au_next";
+@import "./btn-au_register";
+@import "./btn-au_signin";
+@import "./btn-chat_box";
+@import "./btn-sm_delete";
+@import "./icon-sm_coin";
+@import "./icon-sm_commission";
+@import "./icon-sm_star";
+@import "./icon-sort_arrow_down";
+@import "./wdgt_ball";
+
+
+@mixin widget-scss
+{
+    @include bg-cut_lines; 
+    @include bg-top_red_panel;
+    @include bg-btm_red_panel;
+    @include bg-top_home_panel; 
+    @include btn-arrow_left; 
+    @include btn-arrow_right; 
+    @include btn-au_confirm; 
+    @include btn-au_next; 
+    @include btn-au_register; 
+    @include btn-au_signin; 
+    @include btn-chat_box; 
+    @include btn-sm_delete; 
+    @include icon-sm_coin;
+    @include icon-sm_commission;
+    @include icon-sm_star;
+    @include icon-sort_arrow_down;
+    @include img-ball;
+    
+    @include bet_input_panel;
+
+}
+
+
+
+/*
+$input_container:('data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2025.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%20255.6%2056.6%22%20style%3D%22enable-background%3Anew%200%200%20255.6%2056.6%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3Aurl(%23SVGID_1_)%3B%7D%0A%09.st1%7Bfill%3A%23511111%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%0A%09%09%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22127.8%22%20y1%3D%222.4863%22%20x2%3D%22127.8%22%20y2%3D%2217.6331%22%20gradientTransform%3D%22matrix(1%200%200%20-1%200%2058.8456)%22%3E%0A%09%09%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23EB5F62%22%2F%3E%0A%09%09%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23DF1E26%3Bstop-opacity%3A0%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Cpath%20class%3D%22st0%22%20d%3D%22M8.9%2C56.6c-4.9%2C0-8.9-4-8.9-8.9v-37c0-4.9%2C4-8.9%2C8.9-8.9h237.8c4.9%2C0%2C8.9%2C4%2C8.9%2C8.9v37c0%2C4.9-4%2C8.9-8.9%2C8.9%0A%09%09H8.9z%22%2F%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M8.9%2C54.8c-4.9%2C0-8.9-4-8.9-8.9v-37C0%2C4%2C4%2C0%2C8.9%2C0h237.8c4.9%2C0%2C8.9%2C4%2C8.9%2C8.9v37c0%2C4.9-4%2C8.9-8.9%2C8.9H8.9z%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E');
+
+@mixin basic-scss {
+    .input_container{
+        background: url($input_container) no-repeat center;
+        width: 100%;
+        height: 40px;
+    }
+} 
+*/

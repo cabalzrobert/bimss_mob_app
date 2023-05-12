@@ -1,0 +1,55 @@
+remove this:{
+    npm uninstall cordova-plugin-device
+    npm uninstall cordova-plugin-background-mode
+}
+
+npm link ./resources/plugins/cordova-plugin-thermal-printer  
+npm link ./resources/plugins/cordova-plugin-sunmi-inner-printer   
+then:
+ionic cap sync
+
+cordova-plugin-file{
+#/www/fileSystemPaths.js
+//channel.waitForInitialization('onFileSystemPathsReady');
+//channel.onCordovaReady.subscribe(function () {
+//    function after (paths) {
+//        for (var k in paths) {
+//            exports.file[k] = paths[k];
+//        }
+//        channel.initializationComplete('onFileSystemPathsReady');
+//    }
+//    exec(after, null, 'File', 'requestAllPaths', []);
+//});
+
+
+}
+
+com-badrit-base64{
+#/www/Base64.js
+Base64.prototype.encodeFile = function(filePath, sucess, failure) {
+	var args = {};
+	args.filePath = filePath;
+	var base = (window.device||window.Capacitor||{});
+	var platform = (base.platform||'').toLowerCase();
+
+	if (platform == "android")
+		cordova.exec(sucess, failure, "Base64", "encodeFile", [args]);
+	else if(!!platform){
+		var c = document.createElement('canvas');
+		var ctx = c.getContext("2d");
+		var img = new Image();
+		
+		img.onload = function() {
+			c.width = this.width;
+			c.height = this.height;
+
+			ctx.drawImage(img, 0, 0);
+
+			var dataUri = c.toDataURL("image/png");
+			
+			sucess(dataUri);
+		};
+		img.src = filePath;
+	}
+}
+}

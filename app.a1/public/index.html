@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BIMSS Mobile App</title>
+    <base href="/" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/applogo.png" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <style>
+      body,html{ width:100%; height:100%; margin:0; padding:0; overflow:hidden!important; }
+      body { --base-scale:1; display: flex; position: relative; }
+      body.lowquality * { filter: none !important; }
+    </style>
+    <script src="/assets/static/data.js"></script>
+    <script>//Object.keys(console).forEach((key)=>(typeof(console[key])=='function'&&(console[key]=function(){})));</script>
+    <script>window.features=true;setTimeout(()=>(function({brldge}){(!!brldge&&brldge());})((window.parent||{})),1);</script>
+  </head>
+  <body class="swal-ion-modal">
+    <div id="root"></div>
+</html>

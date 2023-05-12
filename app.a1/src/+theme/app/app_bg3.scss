@@ -1,0 +1,17 @@
+@mixin app-bg3
+{
+    .app-bg3 {
+        
+        background: url('');
+        background-position: bottom;
+        //background-size: 100% 100%;
+        //background-size: cover !important;
+        background-size : 100%; //165%;//100%;//calc(8% + 32px); //7.25vw; //52px; //12%;// 12%;
+        //background-color: #fff; //rgb(0, 9, 64);
+        background-color: #fff; //rgb(0, 9, 64);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        
+    }
+}

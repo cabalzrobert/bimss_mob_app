@@ -1,0 +1,19 @@
+//$bg-top_home_panel:('data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2024.3.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%20592.9%20100%22%20enable-background%3D%22new%200%200%20592.9%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%3E%0A%09%3ClinearGradient%20id%3D%22SVGID_1_%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22298%22%20y1%3D%2298.5723%22%20x2%3D%22298%22%20y2%3D%22-5.5096%22%3E%0A%09%09%3Cstop%20%20offset%3D%220%22%20style%3D%22stop-color%3A%23FF9601%22%2F%3E%0A%09%09%3Cstop%20%20offset%3D%221%22%20style%3D%22stop-color%3A%23F3F917%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Crect%20x%3D%22-3.3%22%20y%3D%220.5%22%20fill%3D%22url(%23SVGID_1_)%22%20width%3D%22602.6%22%20height%3D%2299.5%22%2F%3E%0A%09%3Crect%20x%3D%22-3.3%22%20y%3D%2297.5%22%20fill%3D%22%23B86306%22%20width%3D%22602.6%22%20height%3D%222.5%22%2F%3E%0A%09%3Crect%20x%3D%22-3.3%22%20y%3D%220.5%22%20fill%3D%22%23F9FC83%22%20width%3D%22602.6%22%20height%3D%222.5%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E');
+
+@mixin bg-top_home_panel
+{
+    .bg-top_home_panel{
+        //background: url($bg-top_home_panel);
+        //background-size: auto 100%;
+        //background-repeat: repeat-x;
+        //margin-top: -1px;
+        width: 100%;
+        height: 50.5px;
+        background-image: linear-gradient(#f6f642, #ff9701);
+        border-top: #f9fc83 solid 2.5px;
+        border-bottom: #b86306 solid 2.5px;
+    }
+}
+/*
+position: absolute; top: 0;  margin-top: -1.5px; 
+*/

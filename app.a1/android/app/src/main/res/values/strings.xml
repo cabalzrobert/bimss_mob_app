@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Barangay</string>
+    <string name="title_activity_main">Barangay</string>
+    <string name="package_name">com.esatpt.ph.barangaysystem</string>
+    <string name="custom_url_scheme">com.esatpt.ph.barangaysystem</string>
+</resources>

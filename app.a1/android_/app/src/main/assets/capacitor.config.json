@@ -1,0 +1,20 @@
+
+{
+  "appId": "com.esatpt.ph.stlpartylist.a1",
+  "appName": "A1",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "hideLogs": true,
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 60000
+    }
+  },
+  "cordova": {},
+  "server": {
+    "allowNavigation": [
+      "*"
+    ]
+  }
+}

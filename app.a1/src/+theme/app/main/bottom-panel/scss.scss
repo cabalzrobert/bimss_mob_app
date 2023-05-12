@@ -1,0 +1,18 @@
+@import "./btn-btm_bet_now";
+@import "./btn-btm_bets";
+@import "./btn-btm_cash_trans";
+@import "./btn-btm_home";
+@import "./btn-btm_place_bet";
+@import "./btn-btm_result";
+@import "./btn-btm_share";
+
+@mixin main_btm-panel
+{
+    @include btn-btm_bet_now; 
+    @include btn-btm_bets; 
+    @include btn-btm_cash_trans; 
+    @include btn-btm_home; 
+    @include btn-btm_place_bet; 
+    @include btn-btm_result; 
+    @include btn-btm_share;
+}

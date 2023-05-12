@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+  "_id": "cordova-plugin-sunmi-inner-printer@1.1.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-sunmi-inner-printer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+    "rawSpec": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+    "saveSpec": "git+https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+    "fetchSpec": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git#980d86e7a24043f6c39348d54f66cc28a694e54e",
+  "_spec": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git",
+  "_where": "D:\\Cache\\Dev\\2020\\ionic\\abacos\\stl\\+old\\app",
+  "author": {
+    "name": "tmalbonph"
+  },
+  "bugs": {
+    "url": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-sunmi-inner-printer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova/Ionic Sunmi V1 Inner Printer",
+  "engines": {
+    "cordovaDependencies": {
+      "7.1.0": {
+        "cordova-android": ">=7.1.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer#readme",
+  "license": "MIT",
+  "name": "cordova-plugin-sunmi-inner-printer",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmalbonph/cordova-plugin-sunmi-inner-printer.git"
+  },
+  "version": "1.1.1"
+}
